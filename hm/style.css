@@ -3,15 +3,53 @@
     padding: 0;
 }
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 16px;
-    background: #438bc5;
-    border: 1px solid #000;
-    padding-top: 16px;
-    padding-bottom: 16px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #217070;
+}
+
+li {
+    float: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.url_head {
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    padding: 20px 26px;
+}
+
+.url_head:hover {
+    font-size: 20px;
+    color: #fff;
+    background-color: #165a5a;
+}
+
+.orange {
+    color: orange;
 }
 
 .container {
@@ -29,14 +67,27 @@
     border: 1px solid black;
 }
 
-.url_head {
-    text-decoration: none;
+.paragraph {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7d7987;
+}
+
+h1 {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.second_header {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
 }
 
 .url {
@@ -47,14 +98,7 @@
     color: #000;
 }
 
-.url_head:hover {
-    font-size: 20px;
-    color: rgb(28, 87, 134);
-    background-color: #702163;
-}
-
 .form {
-
     max-width: 420px;
     margin: 50px auto;
     display: flex;
@@ -72,11 +116,10 @@
     border-radius: 5px;
     margin-bottom: 20px;
     border: 2px solid #d7d7d7;
-
 }
 
 .form button {
-    background: rgb(0, 51, 128);
+    background: green;
     color: white;
     padding: 16px;
     border-radius: 5px;
@@ -106,8 +149,6 @@
 .fa-facebook {
     color: blue;
 }
-
-
 
 .lp {
     width: 100px;
@@ -184,7 +225,7 @@
     }
 
     27% {
-        stroke-dasharray: 8 335.85 8
+        stroke-dasharray: 8 335.85 8;
     }
 
     28% {
@@ -225,7 +266,7 @@
     }
 
     77% {
-        stroke-dasharray: 8 335.85 8
+        stroke-dasharray: 8 335.85 8;
     }
 
     78% {
